@@ -2,7 +2,6 @@ function newItem(){
 
 //1. Adding a new item to the list of items:
 
- 
 let li = $('<li></li>');
   let inputValue = $('#input').val();
   li.append(inputValue);
@@ -13,6 +12,7 @@ let li = $('<li></li>');
     let list = $('#list');
     list.append(li);
   }
+
 //2. Crossing out an item from the list of items:
 
     function crossOut() {
@@ -21,7 +21,7 @@ let li = $('<li></li>');
 
     li.on('dblclick', crossOut);
 
-    //3(i). Deleting with "X":
+//3(i). Deleting with "X":
 
     let crossOutButton = $('<crossOutButton>X</crossOutButton>');
     crossOutButton.append(document.createTextNode('X'));
