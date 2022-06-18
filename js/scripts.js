@@ -21,7 +21,7 @@ function newItem() {
 
   //3(i). Deleting with "X":
 
-  let crossOutButton = $('<crossOutButton>X</crossOutButton>');
+  let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
